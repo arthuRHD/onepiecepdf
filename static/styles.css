@@ -1,0 +1,84 @@
+p {
+  color: #333;
+}
+#loadingBar {
+    display: none;
+    height: 4px;
+    background-color: #0099FF; /* Primary Blue */
+    position: relative;
+}
+
+#loadingBar.loading {
+    display: block;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for better readability */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #FF4500; /* Red */
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 2px solid #0099FF; /* Primary Blue */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.card a {
+    text-decoration: none;
+    color: #0099FF; /* Primary Blue */
+}
+
+.card h2 {
+    margin: 0;
+    color: #FF4500; /* Red */
+}
+
+.back-link {
+    display: block;
+    margin-top: 20px;
+    color: #0099FF; /* Primary Blue */
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}

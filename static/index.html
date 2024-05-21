@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Manga Chapter</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script type="text/javascript" async src="/static/client.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Download One Piece Chapter as PDF</h1>
+        <form action="/download" method="post" id="downloadForm">
+            <label for="chapter">Chapter Number:</label>
+            <input type="text" id="chapter" name="chapter" required>
+            <button type="submit">Generate PDF</button>
+        </form>
+        <button type="button" id="getAllBtn" onclick="synchronizeChapters()">Previously generated</button>
+        <div id="generatedPdfs" class="cards"></div>
+    </div>
+</body>
+</html>
